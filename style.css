@@ -25,3 +25,20 @@ section { padding: 16px 0; }
   .grid { grid-template-columns: 1fr; }
   nav { display: flex; flex-wrap: wrap; }
 }
+
+/* 매뉴얼용 보조 스타일 */
+.figure { margin: 12px 0; }
+.figure img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #eee; }
+.figure figcaption { font-size: 0.9rem; color: #555; margin-top: 6px; }
+
+.callout { padding: 12px; border-radius: 10px; border: 1px solid #e5e5e5; background: #fafafa; }
+.callout.info { background: #f2f7ff; border-color: #d7e6ff; }
+.callout.warn { background: #fff7f2; border-color: #ffd8bf; }
+
+.checklist li { list-style: none; margin: 6px 0; }
+.checklist input { margin-right: 8px; }
+
+details { background: #fafafa; padding: 10px 12px; border-radius: 10px; border: 1px solid #eee; margin: 8px 0; }
+details > summary { cursor: pointer; font-weight: 600; }
+.nextnav a { text-decoration: none; margin-right: 8px; }
+

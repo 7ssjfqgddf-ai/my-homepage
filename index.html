@@ -17,36 +17,142 @@
   </header>
 
   <main>
-    <section class="container hero" id="top">
-      <h2>안녕하세요 👋</h2>
-      <p>여기는 내 첫 홈페이지! 간단한 네비게이션과 섹션이 추가되었습니다.</p>
-      <button id="toggle">문구 숨기기/보이기</button>
-      <div id="msg" class="note">이 문구는 버튼으로 숨겼다가 다시 보이게 할 수 있어요.</div>
-    </section>
+  <!-- 히어로 -->
+  <section class="container hero">
+    <h2>Mahara 사용 매뉴얼</h2>
+    <p>처음 계정 생성부터 제출, 점검까지 한 페이지로 안내합니다.</p>
+    <a href="#toc">바로 목차로 이동</a>
+  </section>
 
-    <section class="container" id="features">
-      <h3>주요 기능</h3>
-      <div class="grid">
-        <article class="card">
-          <h4>빠른 시작</h4>
-          <p>HTML/CSS/JS로 가볍게 시작합니다.</p>
-        </article>
-        <article class="card">
-          <h4>확장 쉬움</h4>
-          <p>페이지/섹션을 필요할 때 쉽게 추가.</p>
-        </article>
-        <article class="card">
-          <h4>배포 간단</h4>
-          <p>GitHub Pages로 바로 공개.</p>
-        </article>
-      </div>
-    </section>
+  <!-- 목차 -->
+  <section class="container" id="toc">
+    <h3>목차</h3>
+    <ol>
+      <li><a href="#start">시작하기(필수 준비)</a></li>
+      <li><a href="#account">계정 만들기 & 로그인</a></li>
+      <li><a href="#portfolio">포트폴리오(페이지) 만들기</a></li>
+      <li><a href="#submit">제출/공유 방법</a></li>
+      <li><a href="#tips">점검 체크리스트</a></li>
+      <li><a href="#faq">자주 묻는 질문(FAQ)</a></li>
+      <li><a href="#trouble">문제 해결</a></li>
+    </ol>
+  </section>
 
-    <section class="container" id="contact">
-      <h3>연락</h3>
-      <p>이메일: <a href="mailto:you@example.com">you@example.com</a></p>
-    </section>
-  </main>
+  <!-- 1. 시작하기 -->
+  <section class="container" id="start">
+    <h3>1) 시작하기 (필수 준비)</h3>
+    <div class="callout info">
+      <strong>필수:</strong> 학교에서 안내한 Mahara 사이트 주소, 본인 계정(또는 발급 정보), 과제 안내문.
+    </div>
+    <ul>
+      <li>브라우저는 최신 버전(크롬/엣지/사파리 권장)</li>
+      <li>스크린샷 저장 폴더: <code>homepage/images/</code> 에 넣고 문서에 링크</li>
+    </ul>
+  </section>
+
+  <!-- 2. 계정 -->
+  <section class="container" id="account">
+    <h3>2) 계정 만들기 & 로그인</h3>
+    <ol>
+      <li>학교가 제공한 Mahara 주소 접속</li>
+      <li>회원가입(또는 학교 계정으로 로그인)</li>
+      <li>프로필에서 <em>이름, 학번(또는 ID), 연락 이메일</em> 확인/수정</li>
+    </ol>
+    <figure class="figure">
+      <img src="images/mahara-login.png" alt="Mahara 로그인 화면 예시" loading="lazy">
+      <figcaption>로그인 화면 예시(이미지는 교체하세요)</figcaption>
+    </figure>
+    <div class="callout warn">
+      <strong>주의:</strong> 비밀번호 분실 대비, 복구 이메일 정확히 입력.
+    </div>
+  </section>
+
+  <!-- 3. 포트폴리오 만들기 -->
+  <section class="container" id="portfolio">
+    <h3>3) 포트폴리오(페이지) 만들기</h3>
+    <ol>
+      <li><strong>새 페이지 만들기</strong> 클릭 → 제목을 ‘나의 학습 포트폴리오’처럼 명확히</li>
+      <li><strong>블록 추가</strong>(텍스트, 이미지, 파일, 외부 링크 등)로 섹션 구성</li>
+      <li>추천 섹션:
+        <ul>
+          <li>학습 성과(과목/프로젝트별 핵심 요약)</li>
+          <li>성찰(강점·개선점·다음 목표)</li>
+          <li>증빙자료(보고서/슬라이드/깃허브/영상 링크)</li>
+        </ul>
+      </li>
+      <li>저장 후 <strong>페이지 보기</strong>로 최종 확인</li>
+    </ol>
+    <div class="grid">
+      <article class="card">
+        <h4>텍스트 블록 팁</h4>
+        <p>문단은 3~5문장, 굵게/리스트를 활용해 가독성↑</p>
+      </article>
+      <article class="card">
+        <h4>이미지 블록 팁</h4>
+        <p>캡션을 달아 맥락 설명(날짜/역할/도구)</p>
+      </article>
+      <article class="card">
+        <h4>파일 블록 팁</h4>
+        <p>파일명 규칙: <code>과목_항목_이름_연도.pdf</code></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. 제출/공유 -->
+  <section class="container" id="submit">
+    <h3>4) 제출/공유 방법</h3>
+    <ol>
+      <li>과목 공지의 <strong>제출 방식</strong> 확인(예: 비공개 링크/그룹 제출/기관 제출 등)</li>
+      <li><strong>공유 설정</strong>에서 대상과 기간(마감일 포함) 지정</li>
+      <li>제출 후 <strong>열람 권한</strong> 테스트(로그아웃/다른 브라우저로 열어보기)</li>
+    </ol>
+    <div class="callout info">
+      <strong>TIP:</strong> 평가자에게 보이는지 <em>미리보기</em>로 최종 확인하세요.
+    </div>
+  </section>
+
+  <!-- 5. 체크리스트 -->
+  <section class="container" id="tips">
+    <h3>5) 점검 체크리스트</h3>
+    <ul class="checklist">
+      <li><input type="checkbox"> 표지(이름/학번/연도) </li>
+      <li><input type="checkbox"> 학습 성과 섹션 3개 이상 </li>
+      <li><input type="checkbox"> 성찰 문단(강점/개선/다음 목표) </li>
+      <li><input type="checkbox"> 증빙 링크(최소 3개) </li>
+      <li><input type="checkbox"> 공유 권한/기간 확인 </li>
+    </ul>
+  </section>
+
+  <!-- 6. FAQ -->
+  <section class="container" id="faq">
+    <h3>6) 자주 묻는 질문</h3>
+    <details>
+      <summary>페이지가 비공개라 평가자가 못 본대요</summary>
+      <p>공유 설정에서 대상(교원/그룹)과 기간을 다시 지정하고 저장하세요.</p>
+    </details>
+    <details>
+      <summary>파일 업로드 용량이 부족해요</summary>
+      <p>용량이 큰 영상은 YouTube(비공개/미등록) 링크로, 문서는 PDF로 최적화.</p>
+    </details>
+    <details>
+      <summary>모바일에서 레이아웃이 깨져요</summary>
+      <p>이미지 가로폭을 100%로 업로드하고, 너무 큰 표는 PDF 링크로 대체.</p>
+    </details>
+  </section>
+
+  <!-- 7. 문제 해결 -->
+  <section class="container" id="trouble">
+    <h3>7) 문제 해결</h3>
+    <ul>
+      <li>로그인/접근 오류: 브라우저 캐시 삭제 후 재시도, 다른 브라우저로 확인</li>
+      <li>이미지 안 보임: 파일 경로/이름(대소문자) 확인, <code>images/</code> 폴더에 존재?</li>
+      <li>제출 확인: 로그아웃 상태에서 공유 링크 열어보기</li>
+    </ul>
+    <p class="nextnav">
+      <a href="#top">맨 위로</a> · <a href="about.html">교사용 안내(about)</a>
+    </p>
+  </section>
+</main>
 
   <footer class="container site-footer">
     <small>© 2025 Me</small>
