@@ -7,23 +7,52 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <header class="container">
-    <h1>반갑습니다 👋</h1>
-    <p>RISE사업 포트폴리오 만들기 가이드</p>
-    <button id="toggle">문구 숨기기/보이기</button>
+  <header class="container site-header">
+    <h1 class="logo"><a href="/">내 첫 홈페이지</a></h1>
+    <nav>
+      <a href="#features">기능</a>
+      <a href="#contact">연락</a>
+      <a href="about.html">소개</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section id="msg">
-      <h2>섹션 제목</h2>
-      <p>이런식으로 만들면 되겠습죠.</p>
+  <main>
+    <section class="container hero" id="top">
+      <h2>안녕하세요 👋</h2>
+      <p>여기는 내 첫 홈페이지! 간단한 네비게이션과 섹션이 추가되었습니다.</p>
+      <button id="toggle">문구 숨기기/보이기</button>
+      <div id="msg" class="note">이 문구는 버튼으로 숨겼다가 다시 보이게 할 수 있어요.</div>
+    </section>
+
+    <section class="container" id="features">
+      <h3>주요 기능</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>빠른 시작</h4>
+          <p>HTML/CSS/JS로 가볍게 시작합니다.</p>
+        </article>
+        <article class="card">
+          <h4>확장 쉬움</h4>
+          <p>페이지/섹션을 필요할 때 쉽게 추가.</p>
+        </article>
+        <article class="card">
+          <h4>배포 간단</h4>
+          <p>GitHub Pages로 바로 공개.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <h3>연락</h3>
+      <p>이메일: <a href="mailto:you@example.com">you@example.com</a></p>
     </section>
   </main>
 
-  <footer class="container">
+  <footer class="container site-footer">
     <small>© 2025 Me</small>
   </footer>
 
   <script src="./script.js"></script>
 </body>
 </html>
+
