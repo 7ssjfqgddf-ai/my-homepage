@@ -42,3 +42,9 @@ details { background: #fafafa; padding: 10px 12px; border-radius: 10px; border: 
 details > summary { cursor: pointer; font-weight: 600; }
 .nextnav a { text-decoration: none; margin-right: 8px; }
 
+.logo { display:flex; align-items:center; }
+.logo img { height:28px; display:block; }
+@media (max-width:720px){ .logo img{ height:24px; } }
+
+
+
